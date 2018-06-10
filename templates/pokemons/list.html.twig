@@ -1,0 +1,34 @@
+{% extends "layout.html.twig" %}
+
+{% block body %}
+    <div class="pokedexBruh">
+        <div class="pokedexTitle">POKEDEX</div>
+    </div>
+    <div class="containerButton">
+        <div class="buttonArrange">
+            <div class="button type-Fire">Fire</div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Water"><a href="{{ path_for('type', { 'type': 'Water' }) }}">Water</a></div>
+        </div>
+    </div>
+
+    {% for pokemon in pokemons %}
+        <a href="{{ path_for('pokemon', { 'slug': pokemon.slug }) }}">
+            <div class="container">
+                <div class="pokemonList type-{{ pokemon.main_type }}">
+                    <div class="pokemonImg">
+                        <img src="/img{{ pokemon.picture }}" alt="{{ pokemon.slug }}">
+                    </div>
+                    <div class="pokemonInfo">
+                        <div><strong>Name:</strong> {{ pokemon.name }}</div>
+                        <div><strong>Height:</strong> {{ pokemon.height }}</div>
+                        <div><strong>Weight:</strong> {{ pokemon.weight }}</div>
+                        <div><strong>Type:</strong> {{ pokemon.main_type }}</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+
+{% endblock %}

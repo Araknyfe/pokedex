@@ -1,0 +1,22 @@
+{% extends "layout.html.twig" %}
+
+
+{% block body %}
+    <div class="pokePerso">
+        <div class="pokeGreyFrame">
+            <div class="pokeWhiteFrame">
+                <img src="/img{{ pokemon.picture }}" alt="{{ pokemon.slug }}">
+            </div>
+            <div class="redDot"></div>
+        </div>
+        <div class="pokePersoInfo">
+            <div><strong>Name:</strong> {{ pokemon.name }} </div>
+            <div><strong>Height:</strong> {{ pokemon.height }}</div>
+            <div><strong>Weight:</strong> {{ pokemon.weight }}</div>
+            {% for type in types %}
+                <div><strong>Type:</strong> {{ type.name }}</div>
+            {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,177 @@
+.pokedexBruh{
+    height: 40px;
+    width:100%;
+    background-color: brown;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pokedexTitle{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.container{
+    text-align: center;
+    font-size: 0;
+    display: inline-flex;
+    margin: 15px;
+}
+
+.pokemonList{
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 10px;
+    height: 170px;
+    width: 120px;
+    border: solid 3px black;
+    border-radius: 15%;
+    font-size: 12px;
+}
+
+.pokemonImg{
+    margin: auto;
+}
+
+/*****
+Select a type of pokemon
+ */
+
+.containerButton{
+    text-align:center;
+    margin-top:15px;
+}
+
+.buttonArrange{
+    text-align:center;
+    display: inline-flex;
+}
+
+.button{
+    width: 100px;
+    border: solid 1px black;
+    border-radius: 10%;
+}
+
+
+/*****
+Pokemon type defines color
+ */
+
+.type-Fire{
+    border-color: #CC391F;
+}
+
+.type-Poison{
+    border-color: #9370db;
+}
+
+.type-Water{
+    border-color: #50dbdb;
+}
+
+.type-Grass{
+    border-color: #69BD4B;
+}
+
+.type-Flying{
+    border-color: #879CE3;
+}
+
+.type-Ice{
+    border-color: #69D4F0;
+}
+
+.type-Normal{
+    border-color: #C4C0B7;
+}
+
+.type-Steel{
+    border-color: #A09EAE;
+}
+
+.type-Electric{
+    border-color: #FCB143;
+}
+
+.type-Fairy{
+    border-color: #F5ADF6;
+}
+
+.type-Ground{
+    border-color: #CEAF61;
+}
+
+.type-Fighting{
+    border-color: #6E3125;
+}
+
+.type-Psychic{
+    border-color: #E0376A;
+}
+
+.type-Bug{
+    border-color: #8E9D34;
+}
+
+.type-Dragon{
+    border-color: #735FD0;
+}
+
+.type-Rock{
+    border-color: #BCA061;
+}
+
+.type-Dark{
+    border-color: #543D32;
+}
+
+.type-Ghost{
+    border-color: #5C61B1;
+}
+
+
+/********
+POKEMON PERSONAL PAGES
+ */
+
+
+.pokePerso{
+    background-color: red;
+    display:inline-flex;
+    height: 100%;
+    width: 100%;
+}
+
+.pokeGreyFrame{
+    height:140px;
+    width: 140px;
+    padding: 8px;
+    background-color: grey;
+    border-radius: 5px 5px 5px 25px;
+}
+
+.pokeWhiteFrame{
+    height: 100px;
+    width: 120px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.redDot{
+    height:20px;
+    width: 20px;
+    margin-top: 5px;
+    background-color: #C9001E;
+    border-radius:50%;
+}
+
+.pokePersoInfo{
+    height: 100px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20%;
+}
