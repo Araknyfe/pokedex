@@ -20,7 +20,7 @@ class Pokemon
     p.`name`,
     p.`height`,
     p.`weight`,
-    p.`picture`,
+    if(p.`picture` != '', p.`picture`, '/pokemons/front/watman.png') as picture,
     (SELECT t.name FROM pokemons_types pt
     JOIN types t ON pt.id_type = t.id
     WHERE pt.id_pokemon = p.id
@@ -46,7 +46,7 @@ class Pokemon
     p.`name`,
     p.`height`,
     p.`weight`,
-    p.`picture`
+    if(p.`picture` != '', p.`picture`, '/pokemons/front/watman.png') as picture
     FROM 
     pokemons p
     WHERE 
@@ -71,7 +71,7 @@ class Pokemon
     p.`name`,
     p.`height`,
     p.`weight`,
-    if(p.`picture` != '', p.`picture`, '/pokemons/front/1.png') as picture,
+    if(p.`picture` != '', p.`picture`, '/pokemons/front/watman.png') as picture,
     (SELECT t.name FROM pokemons_types pt
     JOIN types t ON pt.id_type = t.id
     WHERE pt.id_pokemon = p.id

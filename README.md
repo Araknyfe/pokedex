@@ -1,27 +1,32 @@
-# Slim Framework 3 Skeleton Application
+# SLIM FRAMEWORK, POKEDEX
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
+## Auteur : 
+Marie-Athénaïs Dussordet ma.dussordet@gmail.com
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+## Exigences techniques
 
-## Install the Application
+* PHP 7 +
+* MySQL 5.7
 
-Run this command from the directory in which you want to install your new Slim Framework application.
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+##Fonctionnalités
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
+### Lister les pokemons
 
-To run the application in development, you can run these commands 
+```list.html.twig```
+Liste tous les pokemons. Chaque type a sa couleur prédéfinie et on peut trouver les pokemons classés par types.
 
-	cd [my-app-name]
-	php composer.phar start
+### Pokedex par pokemon
+```unique.html.twig```
+Donne plus d'informations sur le pokemon, agrémenté d'un background selon le type principal du pokemon.
 
-Run this command in the application directory to run the test suite
 
-	php composer.phar test
+### Routing 
 
-That's it! Now go build something cool.
+Tout le routing est géré grâce à slim.
+
+### Twig 
+
+Moteur de templating utilisé pour la création des pages, intégré avec slim.
+

@@ -6,11 +6,60 @@
     </div>
     <div class="containerButton">
         <div class="buttonArrange">
-            <div class="button type-Fire">Fire</div>
+            <div class="button type-Fire"><a href="{{ path_for('type', { 'type': 'Fire' }) }}">Fire</a></div>
         </div>
         <div class="buttonArrange">
             <div class="button type-Water"><a href="{{ path_for('type', { 'type': 'Water' }) }}">Water</a></div>
         </div>
+        <div class="buttonArrange">
+            <div class="button type-Poison"><a href="{{ path_for('type', { 'type': 'Poison' }) }}">Poison</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Ice"><a href="{{ path_for('type', { 'type': 'Ice' }) }}">Ice</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Fighting"><a href="{{ path_for('type', { 'type': 'Fighting' }) }}">Fighting</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Fairy"><a href="{{ path_for('type', { 'type': 'Fairy' }) }}">Fairy</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Electric"><a href="{{ path_for('type', { 'type': 'Electric' }) }}">Electric</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Dragon"><a href="{{ path_for('type', { 'type': 'Dragon' }) }}">Dragon</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Dark"><a href="{{ path_for('type', { 'type': 'Dark' }) }}">Dark</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Bug"><a href="{{ path_for('type', { 'type': 'Bug' }) }}">Bug</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Flying"><a href="{{ path_for('type', { 'type': 'Flying' }) }}">Flying</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Ground"><a href="{{ path_for('type', { 'type': 'Ground' }) }}">Ground</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Ghost"><a href="{{ path_for('type', { 'type': 'Ghost' }) }}">Ghost</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Grass"><a href="{{ path_for('type', { 'type': 'Grass' }) }}">Grass</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Normal"><a href="{{ path_for('type', { 'type': 'Normal' }) }}">Normal</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Psychic"><a href="{{ path_for('type', { 'type': 'Psychic' }) }}">Psychic</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Rock"><a href="{{ path_for('type', { 'type': 'Rock' }) }}">Rock</a></div>
+        </div>
+        <div class="buttonArrange">
+            <div class="button type-Steel"><a href="{{ path_for('type', { 'type': 'Steel' }) }}">Steel</a></div>
+        </div>
+
     </div>
 
     {% for pokemon in pokemons %}
@@ -22,9 +71,9 @@
                     </div>
                     <div class="pokemonInfo">
                         <div><strong>Name:</strong> {{ pokemon.name }}</div>
-                        <div><strong>Height:</strong> {{ pokemon.height }}</div>
-                        <div><strong>Weight:</strong> {{ pokemon.weight }}</div>
-                        <div><strong>Type:</strong> {{ pokemon.main_type }}</div>
+                        {#<div><strong>Height:</strong> {{ pokemon.height }}</div>
+                        <div><strong>Weight:</strong> {{ pokemon.weight }}</div>#}
+                        <div><strong>Main type:</strong> {{ pokemon.main_type }}</div>
                     </div>
                 </div>
             </div>

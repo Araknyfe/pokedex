@@ -25,7 +25,7 @@ a{
     display: inline-block;
     margin: auto;
     padding-bottom: 10px;
-    height: 170px;
+    height: 150px;
     width: 120px;
     border: solid 3px black;
     border-radius: 15%;
@@ -42,11 +42,12 @@ Select a type of pokemon
 
 .containerButton{
     text-align:center;
-    margin-top:15px;
+    margin:15px 0;
 }
 
 .buttonArrange{
     text-align:center;
+    margin-top: 10px;
     display: inline-flex;
 }
 
@@ -133,6 +134,81 @@ Pokemon type defines color
     border-color: #5C61B1;
 }
 
+/*
+ * bqckground gradients
+ */
+.type-bg-Fire{
+    background: linear-gradient(to bottom right, #CC391F, white);
+}
+
+.type-bg-Poison{
+    background: linear-gradient(to bottom right, #9370db, white);
+}
+
+.type-bg-Water{
+    background: linear-gradient(to bottom right, #50dbdb, white);
+}
+
+.type-bg-Grass{
+    background: linear-gradient(to bottom right, #69BD4B, white);
+}
+
+.type-bg-Flying{
+    background: linear-gradient(to bottom right, #879CE3, white);
+}
+
+.type-bg-Ice{
+    background: linear-gradient(to bottom right, #69D4F0, white);
+}
+
+.type-bg-Normal{
+    background: linear-gradient(to bottom right, #C4C0B7, white);
+}
+
+.type-bg-Steel{
+    background: linear-gradient(to bottom right, #A09EAE, white);
+}
+
+.type-bg-Electric{
+    background: linear-gradient(to bottom right, #FCB143, white);
+}
+
+.type-bg-Fairy{
+    background: linear-gradient(to bottom right, #F5ADF6, white);
+}
+
+.type-bg-Ground{
+    background: linear-gradient(to bottom right, #CEAF61, white);
+}
+
+.type-bg-Fighting{
+    background: linear-gradient(to bottom right, #6E3125, white);
+}
+
+.type-bg-Psychic{
+    background: linear-gradient(to bottom right, #E0376A, white);
+}
+
+.type-bg-Bug{
+    background: linear-gradient(to bottom right, #8E9D34, white);
+}
+
+.type-bg-Dragon{
+    background: linear-gradient(to bottom right, #735FD0, white);
+}
+
+.type-bg-Rock{
+    background: linear-gradient(to bottom right, #BCA061, white);
+}
+
+.type-bg-Dark{
+    background: linear-gradient(to bottom right, #543D32, white);
+}
+
+.type-bg-Ghost{
+    background: linear-gradient(to bottom right, #5C61B1, white);
+}
+
 
 /********
 POKEMON PERSONAL PAGES
@@ -140,24 +216,26 @@ POKEMON PERSONAL PAGES
 
 
 .pokePerso{
-    background-color: red;
-    display:inline-flex;
-    height: 100%;
+    padding: 50px;
+    height: 1300px;
     width: 100%;
 }
 
 .pokeGreyFrame{
-    height:140px;
-    width: 140px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 300px;
     padding: 8px;
     background-color: grey;
     border-radius: 5px 5px 5px 25px;
 }
 
 .pokeWhiteFrame{
-    height: 100px;
-    width: 120px;
+    height: 260px;
+    width: 280px;
     background-color: #FFF;
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -169,9 +247,44 @@ POKEMON PERSONAL PAGES
     border-radius:50%;
 }
 
-.pokePersoInfo{
-    height: 100px;
+
+.pokeName{
+    height: 70px;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
     background-color: #fff;
     padding: 15px;
+    border: solid 3px black;
     border-radius: 20%;
 }
+
+.pokePersoInfo{
+    height: 100px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border: solid 2px black;
+    border-radius: 20%;
+}
+
+.pokeImg{
+    width: 250px;
+}
+
+
+.pokeText{
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+}
+
+
+.pokemonType{
+    display: inline-block;
+}
+

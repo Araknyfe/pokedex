@@ -2,21 +2,26 @@
 
 
 {% block body %}
-    <div class="pokePerso">
+
+    <div class="pokePerso type-bg-{{ types[0].name }}">
+        <div><a href="{{ path_for('pokemons') }}">Back to Pokedex</a></div>
         <div class="pokeGreyFrame">
             <div class="pokeWhiteFrame">
-                <img src="/img{{ pokemon.picture }}" alt="{{ pokemon.slug }}">
+                <img src="/img{{ pokemon.picture }}" alt="{{ pokemon.slug }}" class="pokeImg">
             </div>
             <div class="redDot"></div>
         </div>
+        <div class="pokeName">
+            <div class="pokemonName"><strong> {{ pokemon.name }} </strong></div>
+        </div>
         <div class="pokePersoInfo">
-            <div><strong>Name:</strong> {{ pokemon.name }} </div>
-            <div><strong>Height:</strong> {{ pokemon.height }}</div>
-            <div><strong>Weight:</strong> {{ pokemon.weight }}</div>
+            <div class="pokeText"><strong>Height:</strong> {{ pokemon.height /10  }} m</div>
+            <div class="pokeText"><strong>Weight:</strong> {{ pokemon.weight /10 }} kg</div>
+            <div class="pokeText"><strong>Type:</strong>
             {% for type in types %}
-                <div><strong>Type:</strong> {{ type.name }}</div>
+                <div class="pokemonType">{{ type.name }}</div>
             {% endfor %}
-
+            </div>
         </div>
     </div>
 {% endblock %}
